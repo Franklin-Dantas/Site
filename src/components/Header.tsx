@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Sun, Moon, Terminal, Database, Brain } from 'lucide-react';
-import { useTheme } from '@/contexts/ThemeContext';
-import { useCategory, Category } from '@/contexts/CategoryContext';
-import { useLanguage, Language } from '@/contexts/LanguageContext';
+import { useTheme, useCategory, useLanguage, type Category, type Language } from '@/contexts';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -41,8 +39,8 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? 'glass-card shadow-lg border-b border-border/50'
-          : 'bg-transparent'
+        ? 'glass-card shadow-lg border-b border-border/50'
+        : 'bg-transparent'
         }`}
     >
       <div className="container-custom">
@@ -62,8 +60,8 @@ const Header = () => {
                   key={cat.id}
                   onClick={() => setCategory(cat.id)}
                   className={`p-3 rounded-full transition-all duration-300 ${category === cat.id
-                      ? 'bg-gradient-to-br from-purple to-cyan text-white shadow-lg glow-purple scale-105'
-                      : 'text-muted-foreground hover:text-foreground hover:bg-muted/50 hover:scale-105'
+                    ? 'bg-gradient-to-br from-purple to-cyan text-white shadow-lg glow-purple scale-105'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50 hover:scale-105'
                     }`}
                   title={cat.label}
                 >

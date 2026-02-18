@@ -1,4 +1,8 @@
-import type { Testimonial } from '@/types';
+export interface Testimonial {
+    quote: string;
+    name: string;
+    position: string;
+}
 
 export const testimonials: Testimonial[] = [
     {

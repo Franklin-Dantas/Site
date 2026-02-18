@@ -1,6 +1,6 @@
 import { Github, Linkedin, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useTranslation } from '@/hooks/useTranslation';
+import { useTranslation } from '@/contexts';
 import { motion } from 'framer-motion';
 import profilePhoto from '@/image/profile-photo.png';
 

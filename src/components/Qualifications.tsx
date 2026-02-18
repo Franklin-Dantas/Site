@@ -1,7 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Award, GraduationCap, Heart } from 'lucide-react';
-import { useCategory } from '@/contexts/CategoryContext';
-import { useTranslation } from '@/hooks/useTranslation';
+import { useCategory } from '@/contexts';
+import { useTranslation } from '@/contexts';
 import { motion, AnimatePresence } from 'framer-motion';
 import { qualificationsByCategory } from '@/data/qualifications';
 

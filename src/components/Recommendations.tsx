@@ -1,5 +1,5 @@
 import { Quote } from 'lucide-react';
-import { useTranslation } from '@/hooks/useTranslation';
+import { useTranslation } from '@/contexts';
 import { motion } from 'framer-motion';
 import {
   Carousel,

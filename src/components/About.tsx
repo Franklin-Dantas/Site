@@ -1,6 +1,6 @@
 import { Badge } from '@/components/ui/badge';
-import { useCategory } from '@/contexts/CategoryContext';
-import { useTranslation } from '@/hooks/useTranslation';
+import { useCategory } from '@/contexts';
+import { useTranslation } from '@/contexts';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const About = () => {
@@ -28,8 +28,8 @@ const About = () => {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: { duration: 0.5 }
     },
@@ -37,8 +37,8 @@ const About = () => {
 
   const skillVariants = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       scale: 1,
       transition: { duration: 0.3 }
     },

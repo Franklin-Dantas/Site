@@ -1,4 +1,4 @@
-import { useTranslation } from '@/hooks/useTranslation';
+import { useTranslation } from '@/contexts';
 import { motion } from 'framer-motion';
 import { socialLinks } from '@/data/social';
 

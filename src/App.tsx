@@ -1,30 +1,35 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ThemeProvider } from "@/contexts/ThemeContext";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
-
-const queryClient = new QueryClient();
+import { ThemeProvider } from '@/contexts';
+import { LanguageProvider, CategoryProvider } from '@/contexts';
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Projects from '@/components/Projects';
+import Qualifications from '@/components/Qualifications';
+import Recommendations from '@/components/Recommendations';
+import Footer from '@/components/Footer';
+import GalaxyBackground from '@/components/GalaxyBackground';
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <ThemeProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
-    </ThemeProvider>
-  </QueryClientProvider>
+  <ThemeProvider>
+    <LanguageProvider>
+      <CategoryProvider>
+        <div className="min-h-screen relative">
+          <GalaxyBackground />
+          <div className="relative z-10">
+            <Header />
+            <main>
+              <Hero />
+              <About />
+              <Projects />
+              <Qualifications />
+              <Recommendations />
+            </main>
+            <Footer />
+          </div>
+        </div>
+      </CategoryProvider>
+    </LanguageProvider>
+  </ThemeProvider>
 );
 
 export default App;

@@ -1,6 +1,6 @@
 import ProjectCard from './ProjectCard';
-import { useCategory } from '@/contexts/CategoryContext';
-import { useTranslation } from '@/hooks/useTranslation';
+import { useCategory } from '@/contexts';
+import { useTranslation } from '@/contexts';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projectsByCategory } from '@/data/projects';
 

@@ -1,4 +1,30 @@
-import type { QualificationsByCategory } from '@/types';
+import type { Category } from '@/contexts';
+
+interface Award {
+    title: string;
+    subtitle: string;
+    description: string;
+}
+
+interface Certification {
+    title: string;
+    org: string;
+    desc: string;
+}
+
+interface VolunteerItem {
+    title: string;
+    subtitle: string;
+    description: string;
+}
+
+interface QualificationData {
+    awards: Award[];
+    certifications: Certification[];
+    volunteer: VolunteerItem[];
+}
+
+type QualificationsByCategory = Record<Category, QualificationData>;
 
 export const qualificationsByCategory: QualificationsByCategory = {
     fullstack: {

@@ -1,7 +1,17 @@
-import type { ProjectsByCategory } from '@/types';
+import type { Category } from '@/contexts';
 import conectaImg from '@/image/project-conecta.jpg';
 import nasaImg from '@/image/project-nasa.jpg';
 import analyticsImg from '@/image/project-analytics.jpg';
+
+export interface Project {
+    image: string;
+    title: string;
+    description: string;
+    tags: string[];
+    featured: boolean;
+}
+
+export type ProjectsByCategory = Record<Category, Project[]>;
 
 export const projectsByCategory: ProjectsByCategory = {
     fullstack: [
