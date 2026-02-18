@@ -26,107 +26,121 @@ interface QualificationData {
 
 type QualificationsByCategory = Record<Category, QualificationData>;
 
+// ─── All awards (shared pool) ───────────────────────────────
+const fundacaoEstudar: Award = {
+    title: 'Fundação Estudar',
+    subtitle: 'Melhor Projeto do Brasil',
+    description: 'Projeto Conecta Cidadão reconhecido pela inovação em tecnologia e análise de dados públicos.',
+};
+
+const nasaSpaceApps: Award = {
+    title: 'NASA Space Apps Challenge',
+    subtitle: '2º Lugar Nacional',
+    description: 'Solução de ML para análise de dados espaciais e visualização de missões.',
+};
+
+const hackathonDev: Award = {
+    title: 'Hackathon Dev Challenge',
+    subtitle: '1º Lugar',
+    description: 'Desenvolvimento de aplicação full-stack em 48 horas com React e Node.js.',
+};
+
+const dataScienceSummit: Award = {
+    title: 'Data Science Summit',
+    subtitle: 'Melhor Dashboard',
+    description: 'Dashboard de BI premiado por insights estratégicos e visualizações impactantes.',
+};
+
+const aiHackathon: Award = {
+    title: 'AI Hackathon',
+    subtitle: 'Melhor Modelo Preditivo',
+    description: 'Modelo de machine learning com 95% de acurácia em classificação de dados.',
+};
+
+// ─── All certifications (shared pool) ───────────────────────
+const certFullStack = { title: 'Full-Stack Development', org: 'Meta', desc: 'React, Node.js, databases e APIs RESTful.' };
+const certAWSSolutions = { title: 'AWS Solutions Architect', org: 'Amazon', desc: 'Arquitetura cloud, serverless e microserviços.' };
+const certTypeScript = { title: 'TypeScript Mastery', org: 'Udemy', desc: 'TypeScript avançado para aplicações enterprise.' };
+const certReact = { title: 'React Advanced Patterns', org: 'Frontend Masters', desc: 'Hooks, context, performance e testes.' };
+const certNode = { title: 'Node.js Backend', org: 'Rocketseat', desc: 'APIs, autenticação, uploads e deploy.' };
+const certPostgreSQL = { title: 'PostgreSQL Expert', org: 'PostgreSQL', desc: 'Modelagem, otimização e administração.' };
+const certGoogleData = { title: 'Google Data Analytics', org: 'Google', desc: 'Análise de dados, SQL, visualização e storytelling.' };
+const certAWSData = { title: 'AWS Data Engineer', org: 'Amazon', desc: 'Pipelines de dados, ETL e processamento em larga escala.' };
+const certPowerBI = { title: 'Power BI Specialist', org: 'Microsoft', desc: 'Dashboards, DAX e modelagem para BI.' };
+const certSQL = { title: 'SQL & Database Design', org: 'Stanford Online', desc: 'Modelagem relacional e otimização de queries.' };
+const certSpark = { title: 'Apache Spark', org: 'Databricks', desc: 'Processamento distribuído e big data.' };
+const certDataPython = { title: 'Data Engineering with Python', org: 'DataCamp', desc: 'ETL, pipelines e automação de dados.' };
+const certDeepLearning = { title: 'Deep Learning Specialization', org: 'DeepLearning.AI', desc: 'Redes neurais, CNNs, RNNs e transformers.' };
+const certML = { title: 'Machine Learning', org: 'Stanford Online', desc: 'Algoritmos de ML, regressão, classificação.' };
+const certPythonDS = { title: 'Python for Data Science', org: 'IBM', desc: 'Python para ciência de dados e ML.' };
+const certTensorFlow = { title: 'TensorFlow Developer', org: 'Google', desc: 'Desenvolvimento de modelos com TensorFlow.' };
+const certNLP = { title: 'NLP with Transformers', org: 'Hugging Face', desc: 'Processamento de linguagem natural moderno.' };
+const certMLOps = { title: 'MLOps Fundamentals', org: 'Google Cloud', desc: 'Deploy e monitoramento de modelos em produção.' };
+
+// ─── All volunteer items (shared pool) ──────────────────────
+const volMentor: VolunteerItem = {
+    title: 'Mentor de Desenvolvimento',
+    subtitle: 'Comunidade Dev Local',
+    description: 'Mentoria para desenvolvedores iniciantes em programação web e boas práticas.',
+};
+
+const volReactWorkshops: VolunteerItem = {
+    title: 'Workshops de React',
+    subtitle: 'Universidade',
+    description: 'Ministrei workshops sobre React e desenvolvimento moderno para estudantes.',
+};
+
+const volDataForGood: VolunteerItem = {
+    title: 'Data for Good',
+    subtitle: 'Projetos Sociais',
+    description: 'Análise de dados voluntária para ONGs e iniciativas de impacto social.',
+};
+
+const volMonitorData: VolunteerItem = {
+    title: 'Monitor de Análise de Dados',
+    subtitle: 'Universidade',
+    description: 'Auxílio a estudantes em estatística, SQL e ferramentas de análise.',
+};
+
+const volAISocial: VolunteerItem = {
+    title: 'AI for Social Good',
+    subtitle: 'Projetos Comunitários',
+    description: 'Desenvolvimento de soluções de IA para resolver problemas sociais.',
+};
+
+const volMLWorkshop: VolunteerItem = {
+    title: 'Workshop de Machine Learning',
+    subtitle: 'Eventos Acadêmicos',
+    description: 'Palestras e hands-on sobre introdução ao machine learning para iniciantes.',
+};
+
+// ─── Ordered by relevance per category ──────────────────────
 export const qualificationsByCategory: QualificationsByCategory = {
     fullstack: {
-        awards: [
-            {
-                title: 'Fundação Estudar',
-                subtitle: 'Melhor Projeto Full-Stack',
-                description: 'Projeto Conecta Cidadão reconhecido pela arquitetura web robusta e escalável.',
-            },
-            {
-                title: 'Hackathon Dev Challenge',
-                subtitle: '1º Lugar',
-                description: 'Desenvolvimento de aplicação full-stack em 48 horas com React e Node.js.',
-            },
-        ],
+        awards: [fundacaoEstudar, hackathonDev, nasaSpaceApps, dataScienceSummit, aiHackathon],
         certifications: [
-            { title: 'Full-Stack Development', org: 'Meta', desc: 'React, Node.js, databases e APIs RESTful.' },
-            { title: 'AWS Solutions Architect', org: 'Amazon', desc: 'Arquitetura cloud, serverless e microserviços.' },
-            { title: 'TypeScript Mastery', org: 'Udemy', desc: 'TypeScript avançado para aplicações enterprise.' },
-            { title: 'React Advanced Patterns', org: 'Frontend Masters', desc: 'Hooks, context, performance e testes.' },
-            { title: 'Node.js Backend', org: 'Rocketseat', desc: 'APIs, autenticação, uploads e deploy.' },
-            { title: 'PostgreSQL Expert', org: 'PostgreSQL', desc: 'Modelagem, otimização e administração.' },
+            certFullStack, certReact, certNode, certTypeScript, certAWSSolutions, certPostgreSQL,
+            certSQL, certGoogleData, certPowerBI, certAWSData, certDataPython, certSpark,
+            certPythonDS, certML, certDeepLearning, certTensorFlow, certNLP, certMLOps,
         ],
-        volunteer: [
-            {
-                title: 'Mentor de Desenvolvimento',
-                subtitle: 'Comunidade Dev Local',
-                description: 'Mentoria para desenvolvedores iniciantes em programação web e boas práticas.',
-            },
-            {
-                title: 'Workshops de React',
-                subtitle: 'Universidade',
-                description: 'Ministrei workshops sobre React e desenvolvimento moderno para estudantes.',
-            },
-        ],
+        volunteer: [volMentor, volReactWorkshops, volDataForGood, volMonitorData, volAISocial, volMLWorkshop],
     },
     data: {
-        awards: [
-            {
-                title: 'Fundação Estudar',
-                subtitle: 'Melhor Projeto do Brasil',
-                description: 'Projeto Conecta Cidadão reconhecido pela inovação em análise de dados públicos.',
-            },
-            {
-                title: 'Data Science Summit',
-                subtitle: 'Melhor Dashboard',
-                description: 'Dashboard de BI premiado por insights estratégicos e visualizações impactantes.',
-            },
-        ],
+        awards: [fundacaoEstudar, dataScienceSummit, nasaSpaceApps, hackathonDev, aiHackathon],
         certifications: [
-            { title: 'Google Data Analytics', org: 'Google', desc: 'Análise de dados, SQL, visualização e storytelling.' },
-            { title: 'AWS Data Engineer', org: 'Amazon', desc: 'Pipelines de dados, ETL e processamento em larga escala.' },
-            { title: 'Power BI Specialist', org: 'Microsoft', desc: 'Dashboards, DAX e modelagem para BI.' },
-            { title: 'SQL & Database Design', org: 'Stanford Online', desc: 'Modelagem relacional e otimização de queries.' },
-            { title: 'Apache Spark', org: 'Databricks', desc: 'Processamento distribuído e big data.' },
-            { title: 'Data Engineering with Python', org: 'DataCamp', desc: 'ETL, pipelines e automação de dados.' },
+            certGoogleData, certAWSData, certPowerBI, certSQL, certSpark, certDataPython,
+            certPostgreSQL, certFullStack, certPythonDS, certAWSSolutions, certML, certDeepLearning,
+            certReact, certNode, certTypeScript, certTensorFlow, certNLP, certMLOps,
         ],
-        volunteer: [
-            {
-                title: 'Data for Good',
-                subtitle: 'Projetos Sociais',
-                description: 'Análise de dados voluntária para ONGs e iniciativas de impacto social.',
-            },
-            {
-                title: 'Monitor de Análise de Dados',
-                subtitle: 'Universidade',
-                description: 'Auxílio a estudantes em estatística, SQL e ferramentas de análise.',
-            },
-        ],
+        volunteer: [volDataForGood, volMonitorData, volMentor, volReactWorkshops, volAISocial, volMLWorkshop],
     },
     ai: {
-        awards: [
-            {
-                title: 'NASA Space Apps Challenge',
-                subtitle: '2º Lugar Nacional',
-                description: 'Solução de ML para análise de dados espaciais e visualização de missões.',
-            },
-            {
-                title: 'AI Hackathon',
-                subtitle: 'Melhor Modelo Preditivo',
-                description: 'Modelo de machine learning com 95% de acurácia em classificação de dados.',
-            },
-        ],
+        awards: [nasaSpaceApps, aiHackathon, fundacaoEstudar, dataScienceSummit, hackathonDev],
         certifications: [
-            { title: 'Deep Learning Specialization', org: 'DeepLearning.AI', desc: 'Redes neurais, CNNs, RNNs e transformers.' },
-            { title: 'Machine Learning', org: 'Stanford Online', desc: 'Algoritmos de ML, regressão, classificação.' },
-            { title: 'Python for Data Science', org: 'IBM', desc: 'Python para ciência de dados e ML.' },
-            { title: 'TensorFlow Developer', org: 'Google', desc: 'Desenvolvimento de modelos com TensorFlow.' },
-            { title: 'NLP with Transformers', org: 'Hugging Face', desc: 'Processamento de linguagem natural moderno.' },
-            { title: 'MLOps Fundamentals', org: 'Google Cloud', desc: 'Deploy e monitoramento de modelos em produção.' },
+            certDeepLearning, certML, certTensorFlow, certNLP, certMLOps, certPythonDS,
+            certSpark, certGoogleData, certAWSData, certDataPython, certPowerBI, certSQL,
+            certAWSSolutions, certFullStack, certReact, certNode, certTypeScript, certPostgreSQL,
         ],
-        volunteer: [
-            {
-                title: 'AI for Social Good',
-                subtitle: 'Projetos Comunitários',
-                description: 'Desenvolvimento de soluções de IA para resolver problemas sociais.',
-            },
-            {
-                title: 'Workshop de Machine Learning',
-                subtitle: 'Eventos Acadêmicos',
-                description: 'Palestras e hands-on sobre introdução ao machine learning para iniciantes.',
-            },
-        ],
+        volunteer: [volAISocial, volMLWorkshop, volDataForGood, volMonitorData, volMentor, volReactWorkshops],
     },
 };
