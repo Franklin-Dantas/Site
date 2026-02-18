@@ -2,7 +2,45 @@ import { Github, Linkedin, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from '@/hooks/useTranslation';
 import { motion } from 'framer-motion';
-import profilePhoto from '@/assets/profile-photo.png';
+import profilePhoto from '@/image/profile-photo.png';
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6 }
+  },
+};
+
+const photoVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.8 }
+  },
+};
+
+const socialVariants = {
+  hidden: { opacity: 0, x: -20 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.5 }
+  },
+};
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -12,44 +50,6 @@ const Hero = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  };
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { 
-      opacity: 1, 
-      y: 0,
-      transition: { duration: 0.6 }
-    },
-  };
-
-  const photoVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { 
-      opacity: 1, 
-      scale: 1,
-      transition: { duration: 0.8 }
-    },
-  };
-
-  const socialVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: { 
-      opacity: 1, 
-      x: 0,
-      transition: { duration: 0.5 }
-    },
   };
 
   return (
@@ -70,7 +70,7 @@ const Hero = () => {
               <p className="text-muted-foreground text-sm md:text-base font-medium tracking-wider uppercase">
                 {t.hero.role}
               </p>
-              <h1 className="text-foreground bg-gradient-to-r from-purple via-cyan to-blue bg-clip-text text-transparent animate-gradient">
+              <h1 className="bg-gradient-to-r from-purple via-cyan to-blue bg-clip-text text-transparent animate-gradient">
                 Franklin Dantas
               </h1>
             </motion.div>

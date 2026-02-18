@@ -37,12 +37,12 @@
 
     --radius: 0.75rem;
 
-    /* Galaxy accents */
-    --purple: 270 85% 65%;
-    --cyan: 190 85% 65%;
-    --blue: 220 85% 65%;
-    --highlight: 280 85% 70%;
-    --glow: 270 100% 70%;
+    /* Galaxy accents - darker in light mode for contrast */
+    --purple: 270 85% 50%;
+    --cyan: 190 85% 40%;
+    --blue: 220 85% 50%;
+    --highlight: 280 85% 50%;
+    --glow: 270 100% 50%;
   }
 
   .dark {

@@ -3,14 +3,25 @@ import { Sun, Moon, Terminal, Database, Brain } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
 import { useCategory, Category } from '@/contexts/CategoryContext';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
-import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import globeGif from '@/assets/globe-spinning.gif';
+import globeGif from '@/image/globe-spinning.gif';
+
+const categories: { id: Category; icon: React.ReactNode; label: string }[] = [
+  { id: 'fullstack', icon: <Terminal className="h-6 w-6" />, label: 'Full-Stack' },
+  { id: 'data', icon: <Database className="h-6 w-6" />, label: 'Dados' },
+  { id: 'ai', icon: <Brain className="h-6 w-6" />, label: 'IA' },
+];
+
+const languages: { id: Language; label: string; flag: string }[] = [
+  { id: 'pt', label: 'Português', flag: '🇧🇷' },
+  { id: 'en', label: 'English', flag: '🇺🇸' },
+  { id: 'es', label: 'Español', flag: '🇪🇸' },
+];
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
@@ -27,25 +38,12 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const categories: { id: Category; icon: React.ReactNode; label: string }[] = [
-    { id: 'fullstack', icon: <Terminal className="h-6 w-6" />, label: 'Full-Stack' },
-    { id: 'data', icon: <Database className="h-6 w-6" />, label: 'Dados' },
-    { id: 'ai', icon: <Brain className="h-6 w-6" />, label: 'IA' },
-  ];
-
-  const languages: { id: Language; label: string; flag: string }[] = [
-    { id: 'pt', label: 'Português', flag: '🇧🇷' },
-    { id: 'en', label: 'English', flag: '🇺🇸' },
-    { id: 'es', label: 'Español', flag: '🇪🇸' },
-  ];
-
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? 'glass-card shadow-lg border-b border-border/50'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
@@ -63,11 +61,10 @@ const Header = () => {
                 <button
                   key={cat.id}
                   onClick={() => setCategory(cat.id)}
-                  className={`p-3 rounded-full transition-all duration-300 ${
-                    category === cat.id
+                  className={`p-3 rounded-full transition-all duration-300 ${category === cat.id
                       ? 'bg-gradient-to-br from-purple to-cyan text-white shadow-lg glow-purple scale-105'
                       : 'text-muted-foreground hover:text-foreground hover:bg-muted/50 hover:scale-105'
-                  }`}
+                    }`}
                   title={cat.label}
                 >
                   {cat.icon}
@@ -109,9 +106,8 @@ const Header = () => {
                   <DropdownMenuItem
                     key={lang.id}
                     onClick={() => setLanguage(lang.id)}
-                    className={`cursor-pointer transition-all duration-200 ${
-                      language === lang.id ? 'bg-purple/20 text-purple' : 'hover:bg-muted/50'
-                    }`}
+                    className={`cursor-pointer transition-all duration-200 ${language === lang.id ? 'bg-purple/20 text-purple' : 'hover:bg-muted/50'
+                      }`}
                   >
                     <span className="mr-2">{lang.flag}</span>
                     {lang.label}

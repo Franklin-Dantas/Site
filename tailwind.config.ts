@@ -57,6 +57,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        /* Galaxy accent colors - used by gradient utilities (from-*, via-*, to-*) */
+        purple: "hsl(var(--purple))",
+        cyan: "hsl(var(--cyan))",
+        blue: "hsl(var(--blue))",
+        highlight: "hsl(var(--highlight))",
+        glow: "hsl(var(--glow))",
       },
       borderRadius: {
         lg: "var(--radius)",
