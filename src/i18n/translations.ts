@@ -189,7 +189,7 @@ export const translations = {
         p3: 'Además de la formación técnica, actúo como monitor en eventos académicos y estoy comprometido con iniciativas voluntarias, creyendo en el poder de la tecnología como herramienta de transformación.',
       },
       ai: {
-        p1: 'Soy un desarrocientífico de la computaciónllador apasionado por la tecnología e innovación, con enfoque especial en <highlight>inteligencia artificial y machine learning</highlight>. Mi trayectoria combina desarrollo de software con IA aplicada, creando soluciones inteligentes que resuelven problemas reales.',
+        p1: 'Soy un científico de la computación apasionado por la tecnología e innovación, con enfoque especial en <highlight>inteligencia artificial y machine learning</highlight>. Mi trayectoria combina desarrollo de software con IA aplicada, creando soluciones inteligentes que resuelven problemas reales.',
         p2: 'Con <award>2º lugar en el Hackathon de la NASA</award> usando ML para visualización de datos espaciales y experiencia en <award>Conecta Cidadão</award>, aporto experiencia en Python, TensorFlow, NLP y desarrollo de modelos predictivos.',
         p3: 'Creo en el potencial de la IA para transformar positivamente la sociedad y busco aplicar estas tecnologías en proyectos con impacto social significativo.',
       },
