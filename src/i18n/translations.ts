@@ -46,12 +46,7 @@ export const translations = {
         fullstack: 'Projetos Full-Stack',
         data: 'Projetos de Dados',
         ai: 'Projetos de Inteligência Artificial',
-      },
-      descriptions: {
-        fullstack: 'Aplicações web completas com frontend e backend integrados.',
-        data: 'Soluções de engenharia e análise de dados com foco em insights.',
-        ai: 'Projetos envolvendo machine learning e inteligência artificial.',
-      },
+      }
     },
     // Qualifications
     qualifications: {
@@ -60,7 +55,6 @@ export const translations = {
         data: 'Qualificações em Dados',
         ai: 'Qualificações em IA',
       },
-      description: 'Reconhecimentos, certificações e contribuições na área selecionada.',
       tabs: {
         awards: 'Premiações',
         certifications: 'Certificados',
@@ -70,7 +64,6 @@ export const translations = {
     // Recommendations
     recommendations: {
       title: 'Recomendações',
-      description: 'Feedback de profissionais com quem tive o prazer de trabalhar.',
     },
     // Footer
     footer: {
@@ -126,12 +119,7 @@ export const translations = {
         fullstack: 'Full-Stack Projects',
         data: 'Data Projects',
         ai: 'Artificial Intelligence Projects',
-      },
-      descriptions: {
-        fullstack: 'Complete web applications with integrated frontend and backend.',
-        data: 'Data engineering and analytics solutions focused on insights.',
-        ai: 'Projects involving machine learning and artificial intelligence.',
-      },
+      }
     },
     // Qualifications
     qualifications: {
@@ -140,7 +128,6 @@ export const translations = {
         data: 'Data Qualifications',
         ai: 'AI Qualifications',
       },
-      description: 'Recognitions, certifications and contributions in the selected area.',
       tabs: {
         awards: 'Awards',
         certifications: 'Certifications',
@@ -150,7 +137,6 @@ export const translations = {
     // Recommendations
     recommendations: {
       title: 'Recommendations',
-      description: 'Feedback from professionals I had the pleasure of working with.',
     },
     // Footer
     footer: {
@@ -206,12 +192,7 @@ export const translations = {
         fullstack: 'Proyectos Full-Stack',
         data: 'Proyectos de Datos',
         ai: 'Proyectos de Inteligencia Artificial',
-      },
-      descriptions: {
-        fullstack: 'Aplicaciones web completas con frontend y backend integrados.',
-        data: 'Soluciones de ingeniería y análisis de datos enfocadas en insights.',
-        ai: 'Proyectos que involucran machine learning e inteligencia artificial.',
-      },
+      }
     },
     // Qualifications
     qualifications: {
@@ -220,7 +201,6 @@ export const translations = {
         data: 'Calificaciones en Datos',
         ai: 'Calificaciones en IA',
       },
-      description: 'Reconocimientos, certificaciones y contribuciones en el área seleccionada.',
       tabs: {
         awards: 'Premios',
         certifications: 'Certificados',
@@ -230,7 +210,6 @@ export const translations = {
     // Recommendations
     recommendations: {
       title: 'Recomendaciones',
-      description: 'Comentarios de profesionales con quienes tuve el placer de trabajar.',
     },
     // Footer
     footer: {
