@@ -61,29 +61,25 @@ const Recommendations = () => {
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="pl-4 md:basis-1/2">
                   <motion.div
-                    className="h-full p-6 rounded-2xl glass-card border border-purple/20 hover:border-purple/40 hover:shadow-xl transition-all duration-300"
+                    className="h-full p-8 rounded-2xl glass-card border border-purple/20 hover:border-purple/40 hover:shadow-xl transition-all duration-300 relative overflow-hidden group"
                     whileHover={{ y: -8, scale: 1.02 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <motion.div
-                      className="inline-block p-3 rounded-full bg-purple/10"
-                      whileHover={{ rotate: 10, scale: 1.1 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <Quote className="h-6 w-6 text-purple" />
-                    </motion.div>
+                    <Quote className="absolute -top-4 -left-4 h-32 w-32 text-purple/10 -rotate-12 transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-6" />
 
-                    <p className="text-muted-foreground leading-relaxed my-6">
-                      "{testimonial.quote}"
-                    </p>
+                    <div className="relative z-10">
+                      <p className="text-muted-foreground leading-relaxed mb-6 italic">
+                        "{testimonial.quote}"
+                      </p>
 
-                    <div className="pt-4 border-t border-purple/20">
-                      <p className="font-semibold text-foreground">
-                        {testimonial.name}
-                      </p>
-                      <p className="text-sm text-cyan">
-                        {testimonial.position}
-                      </p>
+                      <div className="pt-6 border-t border-purple/20">
+                        <p className="font-semibold text-foreground">
+                          {testimonial.name}
+                        </p>
+                        <p className="text-sm text-cyan">
+                          {testimonial.position}
+                        </p>
+                      </div>
                     </div>
                   </motion.div>
                 </CarouselItem>
