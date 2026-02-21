@@ -1,53 +1,50 @@
-# Portfólio Interativo
+# Portfólio — Franklin Dantas
 
-Este projeto é um site de portfólio moderno e altamente dinâmico, desenvolvido para apresentar diferentes facetas profissionais (Fullstack, Data Science e IA) de uma forma integrada e imersiva. Através de um sistema de "Personas", o conteúdo do site se adapta automaticamente para refletir as habilidades, projetos e experiências específicas de cada área.
+Meu site pessoal de portfólio, desenvolvido para apresentar minhas diferentes áreas de atuação profissional (Full-Stack, Data Science e IA) de forma integrada e imersiva. O conteúdo se adapta dinamicamente de acordo com a área selecionada.
 
-## 🚀 Funcionalidades Principais
+## 🚀 Funcionalidades
 
-- **Sistema de Personas**: Alternância dinâmica de conteúdo entre as áreas de Fullstack, Dados e Inteligência Artificial.
-- **Multilinguagem (i18n)**: Suporte completo para Português, Inglês e Espanhol, adaptando toda a interface para o idioma selecionado.
-- **Background Galáxia Interativo**: Um fundo animado e responsivo que utiliza Canvas para criar uma experiência visual imersiva e moderna.
-- **Modo Dark/Light**: Suporte a temas claro e escuro com transições suaves e persistência de preferência do usuário.
-- **Design Responsivo & Animado**: Interface totalmente responsiva com micro-animações fluidas utilizando Framer Motion para uma melhor experiência de usuário.
-- **Componentes Modulares**: Arquitetura baseada em componentes reutilizáveis e organizados, facilitando a escalabilidade.
+- **Sistema de Personas**: Alternância dinâmica de conteúdo entre Full-Stack, Dados e IA.
+- **Multilinguagem (i18n)**: Suporte para Português, Inglês e Espanhol.
+- **Background Interativo**: Fundo animado com Canvas para uma experiência visual imersiva.
+- **Modo Dark/Light**: Temas claro e escuro com transições suaves e persistência de preferência.
+- **Design Responsivo & Animado**: Interface responsiva com micro-animações via Framer Motion.
+- **Componentes Modulares**: Arquitetura baseada em componentes reutilizáveis.
 
-## 🛠️ Tecnologias e Linguagens
+## 🛠️ Stack
 
-O projeto utiliza um stack tecnológico moderno e focado em performance:
+- **[TypeScript](https://www.typescriptlang.org/)** — Tipagem estática
+- **[React](https://reactjs.org/)** — Biblioteca de UI
+- **[Vite](https://vitejs.dev/)** — Build tool
+- **[Tailwind CSS](https://tailwindcss.com/)** — Estilização utility-first
+- **[Framer Motion](https://www.framer.com/motion/)** — Animações
+- **[Radix UI](https://www.radix-ui.com/)** — Primitives de acessibilidade
+- **[Lucide React](https://lucide.dev/)** — Ícones
+- **[Embla Carousel](https://www.embla-carousel.com/)** — Carrosséis
 
-- **Linguagem**: [TypeScript](https://www.typescriptlang.org/) - Tipagem estática para um código mais seguro e manutenível.
-- **Framework**: [React](https://reactjs.org/) - Biblioteca principal para construção da interface.
-- **Build Tool**: [Vite](https://vitejs.dev/) - Ferramenta de build extremamente veloz.
-- **Estilização**: [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utility-first para um design moderno e responsivo.
-- **Animações**: [Framer Motion](https://www.framer.com/motion/) - Biblioteca poderosa para animações complexas e interativas.
-- **Componentes**: [Radix UI](https://www.radix-ui.com/) - Primitives de UI focados em acessibilidade.
-- **Ícones**: [Lucide React](https://lucide.dev/) - Conjunto de ícones consistentes e bonitos.
-- **Navegação de Conteúdo**: [Embla Carousel](https://www.embla-carousel.com/) - Solução leve para carrosséis de testemunhos e projetos.
+## 📦 Como Rodar
 
-## 📦 Como Instalar e Rodar
+```bash
+# 1. Clone o repositório
+git clone https://github.com/Franklin-Dantas/Site.git
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone https://github.com/Franklin-Dantas/Site.git
-    ```
-2.  **Instale as dependências:**
-    ```bash
-    npm install
-    ```
-3.  **Inicie o projeto em modo de desenvolvimento:**
-    ```bash
-    npm run dev
-    ```
-4.  **Acesse no navegador:**
-    Geralmente disponível em `http://localhost:5173`.
+# 2. Instale as dependências
+npm install
+
+# 3. Inicie em modo dev
+npm run dev
+```
+
+Acesse em `http://localhost:8080`.
 
 ## 🚀 Deploy
 
-O projeto está preparado para deploy no **GitHub Pages**. O script de deploy já está configurado no `package.json`:
+Deploy automático no **GitHub Pages** via GitHub Actions, ou manualmente:
 
 ```bash
 npm run deploy
 ```
 
 ---
+
 Desenvolvido por Franklin Dantas.
