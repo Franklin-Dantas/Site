@@ -7,14 +7,40 @@ export type Category = 'fullstack' | 'data' | 'ai';
 interface CategoryContextType {
     category: Category;
     setCategory: (category: Category) => void;
+    isFirstVisit: boolean;
+    hasDismissedHint: boolean;
+    dismissHint: () => void;
 }
 
 const CategoryContext = createContext<CategoryContextType | undefined>(undefined);
 
 export const CategoryProvider = ({ children }: { children: ReactNode }) => {
-    const [category, setCategory] = useState<Category>('fullstack');
+    const [category, setCategoryState] = useState<Category>(() => {
+        const saved = localStorage.getItem('user-category');
+        return (saved as Category) || 'fullstack';
+    });
+    const [isFirstVisit, setIsFirstVisit] = useState(() => !localStorage.getItem('user-category'));
+    const [hasDismissedHint, setHasDismissedHint] = useState(() => localStorage.getItem('persona-hint-dismissed') === 'true');
+
+    const setCategory = (newCategory: Category) => {
+        setCategoryState(newCategory);
+        localStorage.setItem('user-category', newCategory);
+        setIsFirstVisit(false);
+    };
+
+    const dismissHint = () => {
+        setHasDismissedHint(true);
+        localStorage.setItem('persona-hint-dismissed', 'true');
+    };
+
     return (
-        <CategoryContext.Provider value={{ category, setCategory }}>
+        <CategoryContext.Provider value={{
+            category,
+            setCategory,
+            isFirstVisit,
+            hasDismissedHint,
+            dismissHint
+        }}>
             {children}
         </CategoryContext.Provider>
     );
@@ -37,7 +63,16 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-    const [language, setLanguage] = useState<Language>('pt');
+    const [language, setLanguageState] = useState<Language>(() => {
+        const saved = localStorage.getItem('language');
+        return (saved as Language) || 'pt';
+    });
+
+    const setLanguage = (newLang: Language) => {
+        setLanguageState(newLang);
+        localStorage.setItem('language', newLang);
+    };
+
     return (
         <LanguageContext.Provider value={{ language, setLanguage }}>
             {children}
@@ -67,7 +102,10 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
-    const [theme, setTheme] = useState<Theme>('light');
+    const [theme, setTheme] = useState<Theme>(() => {
+        const saved = localStorage.getItem('theme');
+        return (saved as Theme) || 'dark';
+    });
 
     useEffect(() => {
         const root = window.document.documentElement;
@@ -76,7 +114,11 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
     }, [theme]);
 
     const toggleTheme = () => {
-        setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+        setTheme((prev) => {
+            const newTheme = prev === 'light' ? 'dark' : 'light';
+            localStorage.setItem('theme', newTheme);
+            return newTheme;
+        });
     };
 
     return (

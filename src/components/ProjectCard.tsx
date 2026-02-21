@@ -12,11 +12,10 @@ interface ProjectCardProps {
 const ProjectCard = ({ image, title, description, tags, featured = false }: ProjectCardProps) => {
   return (
     <motion.div
-      className={`group glass-card rounded-2xl overflow-hidden border transition-all duration-500 ${
-        featured
+      className={`group glass-card rounded-2xl overflow-hidden border transition-all duration-500 ${featured
           ? 'border-purple/50 shadow-xl glow-purple'
           : 'border-border/50 hover:border-purple/40'
-      }`}
+        }`}
       whileHover={{ y: -8, scale: 1.02 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
     >

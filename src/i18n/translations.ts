@@ -46,6 +46,11 @@ export const translations = {
         fullstack: 'Projetos Full-Stack',
         data: 'Projetos de Dados',
         ai: 'Projetos de Inteligência Artificial',
+      },
+      descriptions: {
+        fullstack: 'Aplicações web modernas, escaláveis e performáticas desenvolvidas com as melhores tecnologias do mercado.',
+        data: 'Análises complexas e arquiteturas de dados que transformam informação bruta em decisões estratégicas.',
+        ai: 'Modelos inteligentes e sistemas autônomos que resolvem problemas reais com tecnologia de ponta.',
       }
     },
     // Qualifications
@@ -55,6 +60,7 @@ export const translations = {
         data: 'Qualificações em Dados',
         ai: 'Qualificações em IA',
       },
+      description: 'Minha jornada acadêmica e profissional, repleta de aprendizado contínuo e conquistas.',
       tabs: {
         awards: 'Premiações',
         certifications: 'Certificados',
@@ -64,12 +70,26 @@ export const translations = {
     // Recommendations
     recommendations: {
       title: 'Recomendações',
+      description: 'O que colegas e mentores dizem sobre trabalhar comigo e os resultados que entregamos juntos.',
     },
     // Footer
     footer: {
       role: 'Cientista da Computação',
       madeWith: 'Feito com React, TypeScript e Tailwind CSS',
       copyright: 'Copyright',
+    },
+    // Selection Screen
+    selection: {
+      title: 'Dica: Explore minhas facetas',
+      subtitle: 'Escolha uma área para adaptar todo o site às suas necessidades.',
+      fullstack: 'Full-Stack Developer',
+      data: 'Data Scientist / Engineer',
+      ai: 'AI Specialist',
+      fullstackDesc: 'Desenvolvimento web completo, do front ao back.',
+      dataDesc: 'Transformando dados em insights e decisões.',
+      aiDesc: 'Criando o futuro com inteligência artificial.',
+      explore: 'Explorar trilha',
+      info: 'Personalize sua experiência',
     },
   },
   en: {
@@ -119,6 +139,11 @@ export const translations = {
         fullstack: 'Full-Stack Projects',
         data: 'Data Projects',
         ai: 'Artificial Intelligence Projects',
+      },
+      descriptions: {
+        fullstack: 'Modern, scalable, and performant web applications developed with the best market technologies.',
+        data: 'Complex analytics and data architectures that transform raw information into strategic decisions.',
+        ai: 'Intelligent models and autonomous systems that solve real problems with cutting-edge technology.',
       }
     },
     // Qualifications
@@ -128,6 +153,7 @@ export const translations = {
         data: 'Data Qualifications',
         ai: 'AI Qualifications',
       },
+      description: 'My academic and professional journey, filled with continuous learning and achievements.',
       tabs: {
         awards: 'Awards',
         certifications: 'Certifications',
@@ -137,12 +163,26 @@ export const translations = {
     // Recommendations
     recommendations: {
       title: 'Recommendations',
+      description: 'What colleagues and mentors say about working with me and the results we deliver together.',
     },
     // Footer
     footer: {
       role: 'Computer Scientist',
       madeWith: 'Made with React, TypeScript and Tailwind CSS',
       copyright: 'Copyright',
+    },
+    // Selection Screen
+    selection: {
+      title: 'Hint: Explore my expertise',
+      subtitle: 'Choose an area to adapt the entire site to your needs.',
+      fullstack: 'Full-Stack Developer',
+      data: 'Data Scientist / Engineer',
+      ai: 'AI Specialist',
+      fullstackDesc: 'Complete web development, from front to back.',
+      dataDesc: 'Transforming data into insights and decisions.',
+      aiDesc: 'Creating the future with artificial intelligence.',
+      explore: 'Explore track',
+      info: 'Customize your experience',
     },
   },
   es: {
@@ -192,6 +232,11 @@ export const translations = {
         fullstack: 'Proyectos Full-Stack',
         data: 'Proyectos de Datos',
         ai: 'Proyectos de Inteligencia Artificial',
+      },
+      descriptions: {
+        fullstack: 'Aplicaciones web modernas, escalables y de alto rendimiento desarrolladas con las mejores tecnologías del mercado.',
+        data: 'Análisis complejos y arquitecturas de datos que transforman información bruta en decisiones estratégicas.',
+        ai: 'Modelos inteligentes y sistemas autónomos que resuelven problemas reales con tecnología de vanguardia.',
       }
     },
     // Qualifications
@@ -201,6 +246,7 @@ export const translations = {
         data: 'Calificaciones en Datos',
         ai: 'Calificaciones en IA',
       },
+      description: 'Mi trayectoria académica y profesional, llena de aprendizaje continuo y logros.',
       tabs: {
         awards: 'Premios',
         certifications: 'Certificados',
@@ -210,12 +256,26 @@ export const translations = {
     // Recommendations
     recommendations: {
       title: 'Recomendaciones',
+      description: 'Lo que colegas y mentores dicen sobre trabajar conmigo y los resultados que entregamos juntos.',
     },
     // Footer
     footer: {
       role: 'Científico de la Computación',
       madeWith: 'Hecho con React, TypeScript y Tailwind CSS',
       copyright: 'Copyright',
+    },
+    // Selection Screen
+    selection: {
+      title: 'Consejo: Explora mis facetas',
+      subtitle: 'Elige un área para adaptar todo el sitio a tus necesidades.',
+      fullstack: 'Full-Stack Developer',
+      data: 'Científico / Ingeniero de Datos',
+      ai: 'Especialista en IA',
+      fullstackDesc: 'Desarrollo web completo, del frente al fondo.',
+      dataDesc: 'Transformando datos en conocimientos y decisiones.',
+      aiDesc: 'Creando el futuro con inteligencia artificial.',
+      explore: 'Explorar camino',
+      info: 'Personaliza tu experiencia',
     },
   },
 } as const;
