@@ -80,7 +80,7 @@ export const translations = {
     },
     // Selection Screen
     selection: {
-      title: 'Dica: Explore minhas facetas',
+      title: 'Explore diferentes áreas de atuação',
       subtitle: 'Escolha uma área para adaptar todo o site às suas necessidades.',
       fullstack: 'Full-Stack Developer',
       data: 'Data Scientist / Engineer',
@@ -173,7 +173,7 @@ export const translations = {
     },
     // Selection Screen
     selection: {
-      title: 'Hint: Explore my expertise',
+      title: 'Explore different areas of expertise',
       subtitle: 'Choose an area to adapt the entire site to your needs.',
       fullstack: 'Full-Stack Developer',
       data: 'Data Scientist / Engineer',
@@ -266,7 +266,7 @@ export const translations = {
     },
     // Selection Screen
     selection: {
-      title: 'Consejo: Explora mis facetas',
+      title: 'Explora diferentes áreas de actuación',
       subtitle: 'Elige un área para adaptar todo el sitio a tus necesidades.',
       fullstack: 'Full-Stack Developer',
       data: 'Científico / Ingeniero de Datos',

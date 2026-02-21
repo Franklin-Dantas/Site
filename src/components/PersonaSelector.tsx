@@ -33,11 +33,11 @@ const PersonaHint = () => {
     return (
         <AnimatePresence>
             <motion.div
-                initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                initial={{ opacity: 0, y: -20, scale: 0.9 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ type: 'spring', damping: 25, stiffness: 200, delay: 1 }}
-                className="fixed bottom-6 left-6 right-6 md:left-auto md:w-[400px] z-[60]"
+                className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[calc(100vw-2rem)] md:w-[450px] z-[60]"
             >
                 <div className="glass-card p-6 rounded-3xl border border-purple/30 shadow-2xl overflow-hidden relative">
                     {/* Background glow base */}

@@ -8,14 +8,12 @@ import Qualifications from '@/components/Qualifications';
 import Recommendations from '@/components/Recommendations';
 import Footer from '@/components/Footer';
 import GalaxyBackground from '@/components/GalaxyBackground';
-import PersonaHint from '@/components/PersonaSelector';
 
 const App = () => (
   <ThemeProvider>
     <LanguageProvider>
       <CategoryProvider>
         <div className="min-h-screen relative">
-          <PersonaHint />
           <GalaxyBackground />
           <div className="relative z-10">
             <Header />

@@ -8,6 +8,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import globeGif from '@/image/globe-spinning.gif';
+import PersonaHint from '@/components/PersonaSelector';
 
 const categories: { id: Category; icon: React.ReactNode; label: string }[] = [
   { id: 'fullstack', icon: <Terminal className="h-6 w-6" />, label: 'Full-Stack' },
@@ -53,7 +54,7 @@ const Header = () => {
           </button>
 
           {/* Category Icons */}
-          <div className="flex items-center">
+          <div className="flex items-center relative">
             <div className="flex items-center glass-card rounded-full p-1 gap-0.5 shadow-md">
               {categories.map((cat) => (
                 <button
@@ -69,6 +70,7 @@ const Header = () => {
                 </button>
               ))}
             </div>
+            <PersonaHint />
           </div>
 
           <div className="flex items-center gap-2">
