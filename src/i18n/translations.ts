@@ -9,9 +9,9 @@ export const translations = {
     },
     // Hero
     hero: {
-      role: 'Desenvolvedor Full-Stack & Data',
+      role: 'Cientista da Computação',
       tagline: 'Dados, códigos & propósito',
-      description: '— criando tecnologia que gera impacto social. Especializado em análise e engenharia de dados, com projetos premiados nacionalmente e participação no Hackathon da NASA.',
+      description: 'Criando tecnologia que gera impacto social. Especializado em análise e engenharia de dados, com projetos premiados nacionalmente e participação no Hackathon da NASA.',
       viewProjects: 'Ver Projetos',
       resume: 'Currículo',
     },
@@ -74,7 +74,7 @@ export const translations = {
     },
     // Footer
     footer: {
-      role: 'Full-Stack Developer & Data Specialist',
+      role: 'Cientista da Computação',
       madeWith: 'Feito com React, TypeScript e Tailwind CSS',
       copyright: 'Copyright',
     },
@@ -89,9 +89,9 @@ export const translations = {
     },
     // Hero
     hero: {
-      role: 'Full-Stack & Data Developer',
+      role: 'Computer Scientist',
       tagline: 'Data, code & purpose',
-      description: '— building technology that creates social impact. Specialized in data analytics and engineering, with nationally awarded projects and participation in the NASA Hackathon.',
+      description: 'Building technology that creates social impact. Specialized in data analytics and engineering, with nationally awarded projects and participation in the NASA Hackathon.',
       viewProjects: 'View Projects',
       resume: 'Resume',
     },
@@ -154,7 +154,7 @@ export const translations = {
     },
     // Footer
     footer: {
-      role: 'Full-Stack Developer & Data Specialist',
+      role: 'Computer Scientist',
       madeWith: 'Made with React, TypeScript and Tailwind CSS',
       copyright: 'Copyright',
     },
@@ -169,9 +169,9 @@ export const translations = {
     },
     // Hero
     hero: {
-      role: 'Desarrollador Full-Stack & Data',
+      role: 'Científico de la Computación',
       tagline: 'Datos, código & propósito',
-      description: '— creando tecnología que genera impacto social. Especializado en análisis e ingeniería de datos, con proyectos premiados nacionalmente y participación en el Hackathon de la NASA.',
+      description: 'Creando tecnología que genera impacto social. Especializado en análisis e ingeniería de datos, con proyectos premiados nacionalmente y participación en el Hackathon de la NASA.',
       viewProjects: 'Ver Proyectos',
       resume: 'Currículum',
     },
@@ -234,7 +234,7 @@ export const translations = {
     },
     // Footer
     footer: {
-      role: 'Desarrollador Full-Stack & Especialista en Datos',
+      role: 'Científico de la Computación',
       madeWith: 'Hecho con React, TypeScript y Tailwind CSS',
       copyright: 'Copyright',
     },

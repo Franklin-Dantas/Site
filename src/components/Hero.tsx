@@ -79,7 +79,8 @@ const Hero = () => {
               className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-lg"
               variants={itemVariants}
             >
-              <span className="text-purple font-semibold">{t.hero.tagline}</span> {t.hero.description}
+              <span className="text-purple font-semibold block mb-2">{t.hero.tagline}</span>
+              {t.hero.description}
             </motion.p>
 
             <motion.div
