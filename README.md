@@ -1,8 +1,8 @@
-# Portfólio — Franklin Dantas
+# Portfólio 
 
 Meu site pessoal de portfólio, desenvolvido para apresentar minhas diferentes áreas de atuação profissional (Full-Stack, Data Science e IA) de forma integrada e imersiva. O conteúdo se adapta dinamicamente de acordo com a área selecionada.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - **Sistema de Personas**: Alternância dinâmica de conteúdo entre Full-Stack, Dados e IA.
 - **Multilinguagem (i18n)**: Suporte para Português, Inglês e Espanhol.
@@ -11,7 +11,7 @@ Meu site pessoal de portfólio, desenvolvido para apresentar minhas diferentes �
 - **Design Responsivo & Animado**: Interface responsiva com micro-animações via Framer Motion.
 - **Componentes Modulares**: Arquitetura baseada em componentes reutilizáveis.
 
-## 🛠️ Stack
+## Stack
 
 - **[TypeScript](https://www.typescriptlang.org/)** — Tipagem estática
 - **[React](https://reactjs.org/)** — Biblioteca de UI
@@ -22,7 +22,7 @@ Meu site pessoal de portfólio, desenvolvido para apresentar minhas diferentes �
 - **[Lucide React](https://lucide.dev/)** — Ícones
 - **[Embla Carousel](https://www.embla-carousel.com/)** — Carrosséis
 
-## 📦 Como Rodar
+## Como Rodar
 
 ```bash
 # 1. Clone o repositório
@@ -35,9 +35,9 @@ npm install
 npm run dev
 ```
 
-Acesse em `http://localhost:8080`.
+Acesse em `http://localhost:8080` `https://franklin-dantas.github.io/Site/` .
 
-## 🚀 Deploy
+## Deploy
 
 Deploy automático no **GitHub Pages** via GitHub Actions, ou manualmente:
 
