@@ -1,4 +1,4 @@
-# Portfólio Multi-Persona Interativo
+# Portfólio Interativo
 
 Este projeto é um site de portfólio moderno e altamente dinâmico, desenvolvido para apresentar diferentes facetas profissionais (Fullstack, Data Science e IA) de uma forma integrada e imersiva. Através de um sistema de "Personas", o conteúdo do site se adapta automaticamente para refletir as habilidades, projetos e experiências específicas de cada área.
 
