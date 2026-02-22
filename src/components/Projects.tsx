@@ -1,6 +1,5 @@
 import ProjectCard from './ProjectCard';
-import { useCategory } from '@/contexts';
-import { useTranslation } from '@/contexts';
+import { useCategory, useTranslation } from '@/contexts';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projectsByCategory } from '@/data/projects';
 
@@ -90,7 +89,7 @@ const Projects = () => {
           >
             {projects.map((project) => (
               <motion.div key={`${category}-${project.title}`} variants={itemVariants}>
-                <ProjectCard {...project} />
+                <ProjectCard {...project} featuredLabel={t.projects.featured} />
               </motion.div>
             ))}
           </motion.div>

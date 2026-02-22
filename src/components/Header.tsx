@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Sun, Moon, Terminal, Database, Brain } from 'lucide-react';
+import { Sun, Moon, Terminal, Database, Zap } from 'lucide-react';
 import { useTheme, useCategory, useLanguage, type Category, type Language } from '@/contexts';
 import {
   DropdownMenu,
@@ -13,7 +13,7 @@ import PersonaHint from '@/components/PersonaSelector';
 const categories: { id: Category; icon: React.ReactNode; label: string }[] = [
   { id: 'fullstack', icon: <Terminal className="h-6 w-6" />, label: 'Full-Stack' },
   { id: 'data', icon: <Database className="h-6 w-6" />, label: 'Dados' },
-  { id: 'ai', icon: <Brain className="h-6 w-6" />, label: 'IA' },
+  { id: 'ai', icon: <Zap className="h-6 w-6" />, label: 'Automação' },
 ];
 
 const languages: { id: Language; label: string; flag: string }[] = [

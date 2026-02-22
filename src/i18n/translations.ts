@@ -1,12 +1,5 @@
 export const translations = {
   pt: {
-    // Header
-    header: {
-      fullstack: 'Full-Stack',
-      data: 'Dados',
-      ai: 'IA',
-      selectLanguage: 'Selecionar idioma',
-    },
     // Hero
     hero: {
       role: 'Cientista da Computação',
@@ -29,36 +22,37 @@ export const translations = {
         p3: 'Além da formação técnica, atuo como monitor em eventos acadêmicos e sou engajado em iniciativas voluntárias, acreditando no poder da tecnologia como ferramenta de transformação.',
       },
       ai: {
-        p1: 'Sou um cientista da computação apaixonado por tecnologia e inovação, com foco especial em <highlight>inteligência artificial e machine learning</highlight>. Minha trajetória combina desenvolvimento de software com IA aplicada, criando soluções inteligentes que resolvem problemas reais.',
-        p2: 'Com <award>2º lugar no Hackathon da NASA</award> usando ML para visualização de dados espaciais e experiência no <award>Conecta Cidadão</award>, trago expertise em Python, TensorFlow, NLP e desenvolvimento de modelos preditivos.',
-        p3: 'Acredito no potencial da IA para transformar positivamente a sociedade e busco aplicar essas tecnologias em projetos com impacto social significativo.',
+        p1: 'Sou um cientista da computação apaixonado por tecnologia e inovação, com foco especial em <highlight>automação e desenvolvimento de scripts inteligentes</highlight>. Minha trajetória combina desenvolvimento de software com soluções automatizadas, criando ferramentas que otimizam processos reais.',
+        p2: 'Com <award>2º lugar no Hackathon da NASA</award> criando soluções para visualização de dados espaciais e experiência no <award>Conecta Cidadão</award>, trago expertise em Python, automação de processos, web scraping e desenvolvimento de pipelines.',
+        p3: 'Acredito no poder da automação para transformar positivamente a sociedade e busco aplicar essas tecnologias em projetos com impacto social significativo.',
       },
     },
     // Skills by category
     skills: {
       fullstack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Next.js', 'Prisma', 'Docker', 'AWS', 'GraphQL', 'REST APIs', 'CI/CD', 'Git'],
       data: ['Python', 'SQL', 'Power BI', 'Data Analytics', 'PostgreSQL', 'Apache Spark', 'ETL', 'Azure', 'AWS', 'Pandas', 'Data Engineering', 'Kafka'],
-      ai: ['Python', 'TensorFlow', 'Machine Learning', 'NLP', 'PyTorch', 'Scikit-learn', 'OpenAI', 'LangChain', 'Deep Learning', 'Computer Vision', 'MLOps', 'Hugging Face'],
+      ai: ['Python', 'Selenium', 'Web Scraping', 'Bash', 'Puppeteer', 'Scripting', 'APIs', 'Cron Jobs', 'Task Automation', 'Bot Development', 'CI/CD', 'GitHub Actions'],
     },
     // Projects
     projects: {
       titles: {
         fullstack: 'Projetos Full-Stack',
         data: 'Projetos de Dados',
-        ai: 'Projetos de Inteligência Artificial',
+        ai: 'Projetos de Automação',
       },
       descriptions: {
         fullstack: 'Aplicações web modernas, escaláveis e performáticas desenvolvidas com as melhores tecnologias do mercado.',
         data: 'Análises complexas e arquiteturas de dados que transformam informação bruta em decisões estratégicas.',
-        ai: 'Modelos inteligentes e sistemas autônomos que resolvem problemas reais com tecnologia de ponta.',
-      }
+        ai: 'Scripts e ferramentas de automação que otimizam processos e resolvem problemas reais.',
+      },
+      featured: 'Destaque',
     },
     // Qualifications
     qualifications: {
       titles: {
         fullstack: 'Qualificações Full-Stack',
         data: 'Qualificações em Dados',
-        ai: 'Qualificações em IA',
+        ai: 'Qualificações em Automação',
       },
       description: 'Minha jornada acadêmica e profissional, repleta de aprendizado contínuo e conquistas.',
       tabs: {
@@ -84,22 +78,15 @@ export const translations = {
       subtitle: 'Escolha uma área para adaptar todo o site às suas necessidades.',
       fullstack: 'Full-Stack Developer',
       data: 'Data Scientist / Engineer',
-      ai: 'AI Specialist',
+      ai: 'Automation Specialist',
       fullstackDesc: 'Desenvolvimento web completo, do front ao back.',
       dataDesc: 'Transformando dados em insights e decisões.',
-      aiDesc: 'Criando o futuro com inteligência artificial.',
-      explore: 'Explorar trilha',
-      info: 'Personalize sua experiência',
+      aiDesc: 'Automatizando processos com scripts inteligentes.',
+      hint: 'Troque a qualquer momento no topo',
+      dismiss: 'Entendi',
     },
   },
   en: {
-    // Header
-    header: {
-      fullstack: 'Full-Stack',
-      data: 'Data',
-      ai: 'AI',
-      selectLanguage: 'Select language',
-    },
     // Hero
     hero: {
       role: 'Computer Scientist',
@@ -122,36 +109,37 @@ export const translations = {
         p3: 'Beyond technical skills, I work as a teaching assistant at academic events and am engaged in volunteer initiatives, believing in the power of technology as a tool for transformation.',
       },
       ai: {
-        p1: 'I am a computer scientist passionate about technology and innovation, with special focus on <highlight>artificial intelligence and machine learning</highlight>. My journey combines software development with applied AI, creating intelligent solutions that solve real problems.',
-        p2: 'With <award>2nd place at NASA Hackathon</award> using ML for spatial data visualization and experience at <award>Conecta Cidadão</award>, I bring expertise in Python, TensorFlow, NLP and predictive model development.',
-        p3: 'I believe in the potential of AI to positively transform society and seek to apply these technologies in projects with significant social impact.',
+        p1: 'I am a computer scientist passionate about technology and innovation, with special focus on <highlight>automation and intelligent scripting</highlight>. My journey combines software development with automated solutions, creating tools that optimize real-world processes.',
+        p2: 'With <award>2nd place at NASA Hackathon</award> building solutions for spatial data visualization and experience at <award>Conecta Cidadão</award>, I bring expertise in Python, process automation, web scraping and pipeline development.',
+        p3: 'I believe in the power of automation to positively transform society and seek to apply these technologies in projects with significant social impact.',
       },
     },
     // Skills by category
     skills: {
       fullstack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Next.js', 'Prisma', 'Docker', 'AWS', 'GraphQL', 'REST APIs', 'CI/CD', 'Git'],
       data: ['Python', 'SQL', 'Power BI', 'Data Analytics', 'PostgreSQL', 'Apache Spark', 'ETL', 'Azure', 'AWS', 'Pandas', 'Data Engineering', 'Kafka'],
-      ai: ['Python', 'TensorFlow', 'Machine Learning', 'NLP', 'PyTorch', 'Scikit-learn', 'OpenAI', 'LangChain', 'Deep Learning', 'Computer Vision', 'MLOps', 'Hugging Face'],
+      ai: ['Python', 'Selenium', 'Web Scraping', 'Bash', 'Puppeteer', 'Scripting', 'APIs', 'Cron Jobs', 'Task Automation', 'Bot Development', 'CI/CD', 'GitHub Actions'],
     },
     // Projects
     projects: {
       titles: {
         fullstack: 'Full-Stack Projects',
         data: 'Data Projects',
-        ai: 'Artificial Intelligence Projects',
+        ai: 'Automation Projects',
       },
       descriptions: {
         fullstack: 'Modern, scalable, and performant web applications developed with the best market technologies.',
         data: 'Complex analytics and data architectures that transform raw information into strategic decisions.',
-        ai: 'Intelligent models and autonomous systems that solve real problems with cutting-edge technology.',
-      }
+        ai: 'Scripts and automation tools that optimize processes and solve real-world problems.',
+      },
+      featured: 'Featured',
     },
     // Qualifications
     qualifications: {
       titles: {
         fullstack: 'Full-Stack Qualifications',
         data: 'Data Qualifications',
-        ai: 'AI Qualifications',
+        ai: 'Automation Qualifications',
       },
       description: 'My academic and professional journey, filled with continuous learning and achievements.',
       tabs: {
@@ -177,22 +165,15 @@ export const translations = {
       subtitle: 'Choose an area to adapt the entire site to your needs.',
       fullstack: 'Full-Stack Developer',
       data: 'Data Scientist / Engineer',
-      ai: 'AI Specialist',
+      ai: 'Automation Specialist',
       fullstackDesc: 'Complete web development, from front to back.',
       dataDesc: 'Transforming data into insights and decisions.',
-      aiDesc: 'Creating the future with artificial intelligence.',
-      explore: 'Explore track',
-      info: 'Customize your experience',
+      aiDesc: 'Automating processes with intelligent scripts.',
+      hint: 'Switch anytime at the top',
+      dismiss: 'Got it',
     },
   },
   es: {
-    // Header
-    header: {
-      fullstack: 'Full-Stack',
-      data: 'Datos',
-      ai: 'IA',
-      selectLanguage: 'Seleccionar idioma',
-    },
     // Hero
     hero: {
       role: 'Científico de la Computación',
@@ -215,36 +196,37 @@ export const translations = {
         p3: 'Además de la formación técnica, actúo como monitor en eventos académicos y estoy comprometido con iniciativas voluntarias, creyendo en el poder de la tecnología como herramienta de transformación.',
       },
       ai: {
-        p1: 'Soy un científico de la computación apasionado por la tecnología e innovación, con enfoque especial en <highlight>inteligencia artificial y machine learning</highlight>. Mi trayectoria combina desarrollo de software con IA aplicada, creando soluciones inteligentes que resuelven problemas reales.',
-        p2: 'Con <award>2º lugar en el Hackathon de la NASA</award> usando ML para visualización de datos espaciales y experiencia en <award>Conecta Cidadão</award>, aporto experiencia en Python, TensorFlow, NLP y desarrollo de modelos predictivos.',
-        p3: 'Creo en el potencial de la IA para transformar positivamente la sociedad y busco aplicar estas tecnologías en proyectos con impacto social significativo.',
+        p1: 'Soy un científico de la computación apasionado por la tecnología e innovación, con enfoque especial en <highlight>automatización y desarrollo de scripts inteligentes</highlight>. Mi trayectoria combina desarrollo de software con soluciones automatizadas, creando herramientas que optimizan procesos reales.',
+        p2: 'Con <award>2º lugar en el Hackathon de la NASA</award> creando soluciones para visualización de datos espaciales y experiencia en <award>Conecta Cidadão</award>, aporto experiencia en Python, automatización de procesos, web scraping y desarrollo de pipelines.',
+        p3: 'Creo en el poder de la automatización para transformar positivamente la sociedad y busco aplicar estas tecnologías en proyectos con impacto social significativo.',
       },
     },
     // Skills by category
     skills: {
       fullstack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Next.js', 'Prisma', 'Docker', 'AWS', 'GraphQL', 'REST APIs', 'CI/CD', 'Git'],
       data: ['Python', 'SQL', 'Power BI', 'Data Analytics', 'PostgreSQL', 'Apache Spark', 'ETL', 'Azure', 'AWS', 'Pandas', 'Data Engineering', 'Kafka'],
-      ai: ['Python', 'TensorFlow', 'Machine Learning', 'NLP', 'PyTorch', 'Scikit-learn', 'OpenAI', 'LangChain', 'Deep Learning', 'Computer Vision', 'MLOps', 'Hugging Face'],
+      ai: ['Python', 'Selenium', 'Web Scraping', 'Bash', 'Puppeteer', 'Scripting', 'APIs', 'Cron Jobs', 'Task Automation', 'Bot Development', 'CI/CD', 'GitHub Actions'],
     },
     // Projects
     projects: {
       titles: {
         fullstack: 'Proyectos Full-Stack',
         data: 'Proyectos de Datos',
-        ai: 'Proyectos de Inteligencia Artificial',
+        ai: 'Proyectos de Automatización',
       },
       descriptions: {
         fullstack: 'Aplicaciones web modernas, escalables y de alto rendimiento desarrolladas con las mejores tecnologías del mercado.',
         data: 'Análisis complejos y arquitecturas de datos que transforman información bruta en decisiones estratégicas.',
-        ai: 'Modelos inteligentes y sistemas autónomos que resuelven problemas reales con tecnología de vanguardia.',
-      }
+        ai: 'Scripts y herramientas de automatización que optimizan procesos y resuelven problemas reales.',
+      },
+      featured: 'Destacado',
     },
     // Qualifications
     qualifications: {
       titles: {
         fullstack: 'Calificaciones Full-Stack',
         data: 'Calificaciones en Datos',
-        ai: 'Calificaciones en IA',
+        ai: 'Calificaciones en Automatización',
       },
       description: 'Mi trayectoria académica y profesional, llena de aprendizaje continuo y logros.',
       tabs: {
@@ -270,12 +252,12 @@ export const translations = {
       subtitle: 'Elige un área para adaptar todo el sitio a tus necesidades.',
       fullstack: 'Full-Stack Developer',
       data: 'Científico / Ingeniero de Datos',
-      ai: 'Especialista en IA',
+      ai: 'Especialista en Automatización',
       fullstackDesc: 'Desarrollo web completo, del frente al fondo.',
       dataDesc: 'Transformando datos en conocimientos y decisiones.',
-      aiDesc: 'Creando el futuro con inteligencia artificial.',
-      explore: 'Explorar camino',
-      info: 'Personaliza tu experiencia',
+      aiDesc: 'Automatizando procesos con scripts inteligentes.',
+      hint: 'Cambia en cualquier momento desde arriba',
+      dismiss: 'Entendido',
     },
   },
 } as const;

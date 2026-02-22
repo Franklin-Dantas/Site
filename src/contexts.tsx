@@ -7,7 +7,6 @@ export type Category = 'fullstack' | 'data' | 'ai';
 interface CategoryContextType {
     category: Category;
     setCategory: (category: Category) => void;
-    isFirstVisit: boolean;
     hasDismissedHint: boolean;
     dismissHint: () => void;
 }
@@ -19,13 +18,11 @@ export const CategoryProvider = ({ children }: { children: ReactNode }) => {
         const saved = localStorage.getItem('user-category');
         return (saved as Category) || 'fullstack';
     });
-    const [isFirstVisit, setIsFirstVisit] = useState(() => !localStorage.getItem('user-category'));
     const [hasDismissedHint, setHasDismissedHint] = useState(() => localStorage.getItem('persona-hint-dismissed') === 'true');
 
     const setCategory = (newCategory: Category) => {
         setCategoryState(newCategory);
         localStorage.setItem('user-category', newCategory);
-        setIsFirstVisit(false);
     };
 
     const dismissHint = () => {
@@ -37,7 +34,6 @@ export const CategoryProvider = ({ children }: { children: ReactNode }) => {
         <CategoryContext.Provider value={{
             category,
             setCategory,
-            isFirstVisit,
             hasDismissedHint,
             dismissHint
         }}>

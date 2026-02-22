@@ -1,5 +1,4 @@
-import { ThemeProvider } from '@/contexts';
-import { LanguageProvider, CategoryProvider } from '@/contexts';
+import { ThemeProvider, LanguageProvider, CategoryProvider } from '@/contexts';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import About from '@/components/About';

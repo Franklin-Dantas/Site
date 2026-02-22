@@ -151,10 +151,6 @@
     color: hsl(var(--highlight));
   }
 
-  .bg-highlight {
-    background-color: hsl(var(--highlight));
-  }
-
   /* Galaxy theme utilities */
   .text-purple {
     color: hsl(var(--purple));
@@ -162,14 +158,6 @@
 
   .text-cyan {
     color: hsl(var(--cyan));
-  }
-
-  .text-blue {
-    color: hsl(var(--blue));
-  }
-
-  .text-glow {
-    color: hsl(var(--glow));
   }
 
   .bg-purple {
@@ -184,14 +172,7 @@
     background-color: hsl(var(--blue));
   }
 
-  /* Glassmorphism effect */
-  .glass {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
+  /* Glassmorphism */
   .glass-card {
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(12px) saturate(180%);
@@ -204,49 +185,8 @@
     border: 1px solid rgba(150, 100, 255, 0.2);
   }
 
-  /* Gradient backgrounds */
-  .gradient-purple-cyan {
-    background: linear-gradient(135deg, hsl(var(--purple)) 0%, hsl(var(--cyan)) 100%);
-  }
-
-  .gradient-purple-blue {
-    background: linear-gradient(135deg, hsl(var(--purple)) 0%, hsl(var(--blue)) 100%);
-  }
-
-  .gradient-radial-purple {
-    background: radial-gradient(circle at 50% 50%, hsl(var(--purple) / 0.2) 0%, transparent 50%);
-  }
-
   /* Glow effects */
   .glow-purple {
     box-shadow: 0 0 20px hsl(var(--purple) / 0.3), 0 0 40px hsl(var(--purple) / 0.1);
-  }
-
-  .glow-cyan {
-    box-shadow: 0 0 20px hsl(var(--cyan) / 0.3), 0 0 40px hsl(var(--cyan) / 0.1);
-  }
-
-  .text-shadow-glow {
-    text-shadow: 0 0 20px hsl(var(--glow) / 0.5), 0 0 40px hsl(var(--glow) / 0.3);
-  }
-
-  /* Animated gradient border */
-  .animated-border {
-    position: relative;
-    background: linear-gradient(135deg, hsl(var(--purple)), hsl(var(--cyan)));
-    background-clip: padding-box;
-  }
-
-  .animated-border::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    padding: 2px;
-    background: linear-gradient(135deg, hsl(var(--purple)), hsl(var(--cyan)), hsl(var(--blue)));
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    border-radius: inherit;
   }
 }

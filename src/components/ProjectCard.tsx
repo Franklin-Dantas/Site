@@ -7,14 +7,15 @@ interface ProjectCardProps {
   description: string;
   tags: string[];
   featured?: boolean;
+  featuredLabel?: string;
 }
 
-const ProjectCard = ({ image, title, description, tags, featured = false }: ProjectCardProps) => {
+const ProjectCard = ({ image, title, description, tags, featured = false, featuredLabel = 'Destaque' }: ProjectCardProps) => {
   return (
     <motion.div
       className={`group glass-card rounded-2xl overflow-hidden border transition-all duration-500 ${featured
-          ? 'border-purple/50 shadow-xl glow-purple'
-          : 'border-border/50 hover:border-purple/40'
+        ? 'border-purple/50 shadow-xl glow-purple'
+        : 'border-border/50 hover:border-purple/40'
         }`}
       whileHover={{ y: -8, scale: 1.02 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
@@ -43,7 +44,7 @@ const ProjectCard = ({ image, title, description, tags, featured = false }: Proj
             transition={{ delay: 0.2 }}
           >
             <Badge className="bg-gradient-to-r from-purple to-cyan text-white border-0 rounded-full text-xs font-medium shadow-lg glow-purple">
-              Destaque
+              {featuredLabel}
             </Badge>
           </motion.div>
         )}

@@ -1,9 +1,9 @@
-import { Terminal, Database, Brain, Sparkles, X, ChevronUp } from 'lucide-react';
+import { Terminal, Database, Zap, Sparkles, X, ChevronUp } from 'lucide-react';
 import { useCategory, useTranslation, type Category } from '@/contexts';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const PersonaHint = () => {
-    const { category, setCategory, isFirstVisit, hasDismissedHint, dismissHint } = useCategory();
+    const { category, setCategory, hasDismissedHint, dismissHint } = useCategory();
     const { t } = useTranslation();
 
     const options: { id: Category; icon: any; title: string; color: string }[] = [
@@ -21,13 +21,13 @@ const PersonaHint = () => {
         },
         {
             id: 'ai',
-            icon: Brain,
-            title: 'IA',
+            icon: Zap,
+            title: 'Automação',
             color: 'from-purple-500 to-pink-500',
         },
     ];
 
-    // Se já foi dispensado ou se já houve uma seleção (isFirstVisit=false), não mostra
+    // Se já foi dispensado, não mostra
     if (hasDismissedHint) return null;
 
     return (
@@ -87,13 +87,13 @@ const PersonaHint = () => {
                     <div className="mt-4 pt-4 border-t border-border/30 flex items-center justify-between text-xs text-muted-foreground">
                         <span className="flex items-center gap-1">
                             <ChevronUp className="h-3 w-3 text-purple animate-bounce" />
-                            Troque a qualquer momento no topo
+                            {t.selection.hint}
                         </span>
                         <button
                             onClick={dismissHint}
                             className="font-bold text-purple hover:underline"
                         >
-                            Entendi
+                            {t.selection.dismiss}
                         </button>
                     </div>
                 </div>

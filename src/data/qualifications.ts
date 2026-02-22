@@ -52,9 +52,9 @@ const dataScienceSummit: Award = {
 };
 
 const aiHackathon: Award = {
-    title: 'AI Hackathon',
-    subtitle: 'Melhor Modelo Preditivo',
-    description: 'Modelo de machine learning com 95% de acurácia em classificação de dados.',
+    title: 'Automation Hackathon',
+    subtitle: 'Melhor Projeto de Automação',
+    description: 'Script de automação com 95% de eficiência na otimização de processos de coleta de dados.',
 };
 
 // ─── All certifications (shared pool) ───────────────────────
@@ -70,12 +70,12 @@ const certPowerBI = { title: 'Power BI Specialist', org: 'Microsoft', desc: 'Das
 const certSQL = { title: 'SQL & Database Design', org: 'Stanford Online', desc: 'Modelagem relacional e otimização de queries.' };
 const certSpark = { title: 'Apache Spark', org: 'Databricks', desc: 'Processamento distribuído e big data.' };
 const certDataPython = { title: 'Data Engineering with Python', org: 'DataCamp', desc: 'ETL, pipelines e automação de dados.' };
-const certDeepLearning = { title: 'Deep Learning Specialization', org: 'DeepLearning.AI', desc: 'Redes neurais, CNNs, RNNs e transformers.' };
-const certML = { title: 'Machine Learning', org: 'Stanford Online', desc: 'Algoritmos de ML, regressão, classificação.' };
-const certPythonDS = { title: 'Python for Data Science', org: 'IBM', desc: 'Python para ciência de dados e ML.' };
-const certTensorFlow = { title: 'TensorFlow Developer', org: 'Google', desc: 'Desenvolvimento de modelos com TensorFlow.' };
-const certNLP = { title: 'NLP with Transformers', org: 'Hugging Face', desc: 'Processamento de linguagem natural moderno.' };
-const certMLOps = { title: 'MLOps Fundamentals', org: 'Google Cloud', desc: 'Deploy e monitoramento de modelos em produção.' };
+const certDeepLearning = { title: 'Advanced Python Automation', org: 'Udemy', desc: 'Automação com Python, web scraping e integração de APIs.' };
+const certML = { title: 'Scripting & Automation', org: 'Coursera', desc: 'Automação de tarefas, scripting em Python e Bash.' };
+const certPythonDS = { title: 'Python for Automation', org: 'IBM', desc: 'Python para automação de processos e scripting.' };
+const certTensorFlow = { title: 'Selenium WebDriver', org: 'Udemy', desc: 'Automação de testes e web scraping com Selenium.' };
+const certNLP = { title: 'GitHub Actions & CI/CD', org: 'GitHub', desc: 'Automação de workflows e deploy contínuo.' };
+const certMLOps = { title: 'DevOps & Automation', org: 'Google Cloud', desc: 'Infraestrutura automatizada e deploy contínuo.' };
 
 // ─── All volunteer items (shared pool) ──────────────────────
 const volMentor: VolunteerItem = {
@@ -103,15 +103,15 @@ const volMonitorData: VolunteerItem = {
 };
 
 const volAISocial: VolunteerItem = {
-    title: 'AI for Social Good',
+    title: 'Automação para o Bem Social',
     subtitle: 'Projetos Comunitários',
-    description: 'Desenvolvimento de soluções de IA para resolver problemas sociais.',
+    description: 'Desenvolvimento de soluções automatizadas para resolver problemas sociais.',
 };
 
 const volMLWorkshop: VolunteerItem = {
-    title: 'Workshop de Machine Learning',
+    title: 'Workshop de Automação',
     subtitle: 'Eventos Acadêmicos',
-    description: 'Palestras e hands-on sobre introdução ao machine learning para iniciantes.',
+    description: 'Palestras e hands-on sobre automação com Python e scripting para iniciantes.',
 };
 
 // ─── Ordered by relevance per category ──────────────────────

@@ -1,10 +1,10 @@
 # Portfólio 
 
-Meu site pessoal de portfólio, desenvolvido para apresentar minhas diferentes áreas de atuação profissional (Full-Stack, Data Science e IA) de forma integrada e imersiva. O conteúdo se adapta dinamicamente de acordo com a área selecionada.
+Meu site pessoal de portfólio, desenvolvido para apresentar minhas diferentes áreas de atuação profissional (Full-Stack, Data Science e Automação) de forma integrada e imersiva. O conteúdo se adapta dinamicamente de acordo com a área selecionada.
 
 ## Funcionalidades
 
-- **Sistema de Personas**: Alternância dinâmica de conteúdo entre Full-Stack, Dados e IA.
+- **Sistema de Personas**: Alternância dinâmica de conteúdo entre Full-Stack, Dados e Automação.
 - **Multilinguagem (i18n)**: Suporte para Português, Inglês e Espanhol.
 - **Background Interativo**: Fundo animado com Canvas para uma experiência visual imersiva.
 - **Modo Dark/Light**: Temas claro e escuro com transições suaves e persistência de preferência.
