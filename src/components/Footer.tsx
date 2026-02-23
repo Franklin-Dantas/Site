@@ -11,8 +11,8 @@ const Footer = () => {
       {/* Decorative gradient */}
       <div className="absolute inset-0 bg-gradient-to-t from-purple/5 via-transparent to-transparent pointer-events-none" />
 
-      <div className="container-custom py-12 relative z-10">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+      <div className="container-custom py-6 relative z-10">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-3">
           <motion.div
             className="text-center md:text-left"
             initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
 
         <motion.div
-          className="mt-8 pt-6 border-t border-purple/20 text-center"
+          className="mt-4 pt-3 border-t border-purple/20 text-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

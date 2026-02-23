@@ -1,4 +1,4 @@
-import { Github, Linkedin, FileText } from 'lucide-react';
+import { Github, Linkedin, Instagram, Youtube, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from '@/contexts';
 import { motion } from 'framer-motion';
@@ -123,6 +123,32 @@ const Hero = () => {
                 whileTap={{ scale: 0.9 }}
               >
                 <Github className="h-6 w-6" />
+              </motion.a>
+
+              <motion.a
+                href="https://www.instagram.com/franklin.a.d/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-pink-500 transition-all duration-300 p-2 rounded-full hover:bg-pink-500/10"
+                aria-label="Instagram"
+                variants={socialVariants}
+                whileHover={{ scale: 1.2, rotate: 5 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Instagram className="h-6 w-6" />
+              </motion.a>
+
+              <motion.a
+                href="https://www.youtube.com/@Franklin-Dantas-Dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-red-500 transition-all duration-300 p-2 rounded-full hover:bg-red-500/10"
+                aria-label="YouTube"
+                variants={socialVariants}
+                whileHover={{ scale: 1.2, rotate: -5 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Youtube className="h-6 w-6" />
               </motion.a>
 
               <motion.a

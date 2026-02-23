@@ -83,7 +83,7 @@ const Qualifications = () => {
     <section id="qualificacoes" className="section-padding relative">
       <div className="container-custom">
         <motion.div
-          className="mb-12"
+          className="mb-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -92,7 +92,7 @@ const Qualifications = () => {
           <AnimatePresence mode="wait">
             <motion.h2
               key={`qual-title-${category}`}
-              className="mb-4 bg-gradient-to-r from-purple via-cyan to-blue bg-clip-text text-transparent"
+              className="bg-gradient-to-r from-purple via-cyan to-blue bg-clip-text text-transparent"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 20 }}
@@ -101,9 +101,7 @@ const Qualifications = () => {
               {t.qualifications.titles[category]}
             </motion.h2>
           </AnimatePresence>
-          <p className="text-muted-foreground max-w-xl">
-            {t.qualifications.description}
-          </p>
+
         </motion.div>
 
         <Tabs defaultValue="awards" className="w-full">

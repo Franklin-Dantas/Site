@@ -30,18 +30,16 @@ const Recommendations = () => {
 
       <div className="container-custom relative z-10">
         <motion.div
-          className="mb-12"
+          className="mb-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="mb-4 bg-gradient-to-r from-purple via-cyan to-blue bg-clip-text text-transparent">
+          <h2 className="bg-gradient-to-r from-purple via-cyan to-blue bg-clip-text text-transparent">
             {t.recommendations.title}
           </h2>
-          <p className="text-muted-foreground max-w-xl">
-            {t.recommendations.description}
-          </p>
+
         </motion.div>
 
         <motion.div

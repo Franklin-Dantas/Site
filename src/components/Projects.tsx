@@ -46,7 +46,7 @@ const Projects = () => {
     <section id="projetos" className="section-padding bg-muted/30">
       <div className="container-custom">
         <motion.div
-          className="mb-12"
+          className="mb-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -55,7 +55,7 @@ const Projects = () => {
           <AnimatePresence mode="wait">
             <motion.h2
               key={`title-${category}`}
-              className="mb-4"
+              className=""
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 20 }}
@@ -64,18 +64,7 @@ const Projects = () => {
               {t.projects.titles[category]}
             </motion.h2>
           </AnimatePresence>
-          <AnimatePresence mode="wait">
-            <motion.p
-              key={`desc-${category}`}
-              className="text-muted-foreground max-w-xl"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              {t.projects.descriptions[category]}
-            </motion.p>
-          </AnimatePresence>
+
         </motion.div>
 
         <AnimatePresence mode="wait">
